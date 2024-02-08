@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Kalam:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 200px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.0784313725);
+  align-items: center;
+}
+nav a {
+  font-family: "Inconsolata", monospace;
+  font-family: "Kalam", cursive;
+  color: #000;
+  font-size: 2rem;
+}
+nav .btn-1, nav .btn-2 {
+  background-color: #0195f7;
+  border: none;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+nav .btn-2 {
+  color: #0195f7;
+  background-color: transparent;
+  padding: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 250px;
+}
+section .box-1 {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px 80px;
+  align-items: center;
+}
+section .box-1 .inbox-1 {
+  position: relative;
+}
+section .box-1 .inbox-1 img {
+  width: 40%;
+  border-radius: 55%;
+  background-color: #fff;
+}
+section .box-1 .inbox-2 {
+  display: flex;
+  gap: 0.9rem;
+  flex-direction: column;
+}
+section .box-1 .inbox-2 div {
+  display: flex;
+  gap: 3rem;
+  width: 200%;
+  align-items: center;
+}
+section .box-1 .inbox-2 div h1 {
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+section .box-1 .inbox-2 div button {
+  background-color: #0195f7;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 15px;
+}/*# sourceMappingURL=style.css.map */

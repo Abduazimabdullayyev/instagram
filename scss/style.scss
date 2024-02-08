@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Kalam:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+$globalColor:#0195f7;
+$globalColor2:#000;
+@mixin button{
+    background-color: $globalColor;
+    border: none;
+    padding: 8px 15px;
+    border-radius:10px ;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    margin-right: 15px;
+} 
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 200px;
+    border-bottom: 2px solid #00000014;
+    align-items: center;
+    a{
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Kalam', cursive;
+    color: $globalColor2;
+    font-size: 2rem;
+    }
+    .btn-1{
+       background-color: $globalColor;
+       border: none;
+       color: #fff;
+       padding: 8px 15px;
+       border-radius: 10px;
+       cursor: pointer; 
+    }
+    .btn-2{
+        @extend .btn-1;
+        color:$globalColor;
+        background-color: transparent;
+        padding: 0;
+    }
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 250px;
+    .box-1{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0px 80px;
+        align-items: center;
+        .inbox-1{
+            position: relative;
+            img{
+                width: 40%;
+                border-radius: 55%;
+                background-color: #fff;
+            }
+        }
+        .inbox-2{
+            display: flex;
+            gap: .9rem;
+            flex-direction: column;
+            div{
+                display: flex;
+                gap: 3rem;
+                width: 200%;
+                align-items: center;
+                h1{
+                    font-weight: 400;
+                    font-size: 1.7rem;
+                }
+                button{
+                    @include button{
+                       background-color: #efefef;
+                       color: $globalColor2;
+                       padding: 10px  30px;
+                    }
+                    span{
+                        padding: 5px 10px;
+                    }
+                }
+            }
+
+        }
+    }
+}
